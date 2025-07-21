@@ -15,11 +15,6 @@ body {
   float: right;
 }
 
-a:hover {
-  box-shadow: 0 0 4px 2px red;
-	text-decoration: none;
-}
-
 a {
 	text-decoration: none;
 }
@@ -34,9 +29,6 @@ img {
 }
 
 
-img:hover {
-  box-shadow: 0 0 2px 1px red;
-}
 
 ul {
   list-style-type: none;
