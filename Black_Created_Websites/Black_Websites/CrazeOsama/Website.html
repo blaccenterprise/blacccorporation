@@ -1,35 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>The Band</title>
+<title>Crazeosama Home Page</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./blacc_body.css">
     <link rel="stylesheet" href="./Format_Web.css">
+    <link rel="stylesheet" href="https://blaccenterprise.github.io/content/CSS/blue_theme_part_1.css">
+    <link rel="stylesheet" href="https://blaccenterprise.github.io/content/CSS/blue_theme_part_2.css">
     <script src="./blacc.js"></script>
+    <style>
+        
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+    </style>
 <body>
 
 <!-- Navigation (Stays on Top) -->
-<div class="BLACC-top BLACC-bar BLACC-black">
-<a href="#home" class="BLACC-bar-item BLACC-button">Home</a>
-<a href="#about" class="BLACC-bar-item BLACC-button">About</a>
-<a href="#members" class="BLACC-bar-item BLACC-button">Members</a>
-<a href="#contact" class="BLACC-bar-item BLACC-button">Contact</a>
+<div class="BLACC-top BLACC-bar BLACC-black BLACC-large">
+<a href="#home" class="BLACC-bar-item BLACC-button BLACC-text-blue">Home</a>
+<a href="#music" class="BLACC-bar-item BLACC-button BLACC-text-blue">Singles/Albums</a>
+<a href="#post" class="BLACC-bar-item BLACC-button BLACC-text-blue">Post</a>
+<a href="#contact" class="BLACC-bar-item BLACC-button BLACC-text-blue">Contact</a>
+<button onclick="myFunctiondark()" class="BLACC-button dark-mode" style="float: right;">Dark</button>
 </div>
-
+<script>
+function myFunctiondark() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 <!-- Start Content -->
 <div id="home" class="BLACC-content">
-
 <!-- Slides -->
-<img class="slides centered" src="./BC.jpg" width="75%">
-<img class="slides v" src="./yplogo.jpg" width="75%">
-<img class="slides centered" src="./BC.jpg" width="75%">
+<img class="slides centered" src="./Photos/1.png" width="50%">
+<img class="slides centered" src="./Photos/2.png" width="50%">
+<img class="slides centered" src="./Photos/3.png" width="50%">
+<img class="slides centered" src="./Photos/4.png" width="50%">
+<img class="slides centered" src="./Photos/5.png" width="50%">
+<img class="slides centered" src="./Photos/6.png" width="50%">
+<img class="slides centered" src="./Photos/7.png" width="50%">
+<img class="slides centered" src="./Photos/8.png" width="50%">
+<img class="slides centered" src="./Photos/9.png" width="50%">
+<img class="slides centered" src="./Photos/10.png" width="50%">
+<img class="slides centered" src="./Photos/11.png" width="50%">
+<img class="slides centered" src="./Photos/12.png" width="50%">
+<img class="slides centered" src="./Photos/13.png" width="50%">
+<img class="slides centered" src="./Photos/14.png" width="50%">
+<img class="slides centered" src="./Photos/15.png" width="50%">
+<img class="slides centered" src="./Photos/16.png" width="50%">
 <script>
 BLACC.slideshow(".slides", 1500);
 </script>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <!-- About -->
 <div id="about" class="BLACC-container BLACC-padding-32">
-<h1 class="BLACC-center">CrazeOsama</h1>
+
+<canvas id="myCanvas" width="900" height="250" style="border:1px solid grey;">
+CrazeOsama</canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create linear gradient
+const grad=ctx.createLinearGradient(250,400,380,450);
+grad.addColorStop(0, "darkblue");
+grad.addColorStop(1, "red");
+
+// Fill outlined text with gradient
+ctx.font = "150px cursive";
+ctx.fillStyle = grad;
+ctx.fillText("CrazeOsama",0,190);
+</script>
 <p>This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
@@ -52,7 +154,32 @@ BLACC.slideshow(".slides", 1500);
 
 </div>
 </div>
+<br>
+<br>
 
+    <br>
+    <h2 style="text-align: center; color: blue; font-family: Times;" ><b>Music By CrazeOsama Produced By B.L.A.C.C. Music/ Black Mafia</b></h2>
+    <p class="BLACC-justify">  </p>
+    
+        <hr style="border-color:blue;">
+<video style="margin-left: 100px;" width="750" controls>
+  <source src="./Introduction_The_Use_Of_BLACC_Profile.mp4" type="video/mp4">
+  <source src="./Introduction_The_Use_Of_BLACC_Profile.ogg" type="video/ogg">
+  </video>    
+    <hr style="border-color:blue;">
+        <p class="BLACC-justify"> Description : Video Introduction : The Use Of B.L.A.C.C. Profile, Released on 2024, Video comes from the intellectual property created by Stevie W. Carpenter. </p>
+        <p class="BLACC-justify"> Restrictions : Video is only for watching and informative purposes. Copying and Selling of Video is prohibited. Violation of restriction will result in arbitration by B.L.A.C.C. Corporation and Artist. </p>
+        <p class="BLACC-justify"> Credit : Videos - Introduction : The Use Of B.L.A.C.C. Profile, Created By Stevie W. Carpenter (Artist). Platform Design - BLACChole, Created By Stevie W. Carpenter. </p>
+<hr>
+<br>
+<br>
+
+
+   <a href="./BLACChole_BLACC_Profile_Home.html"><button>Back To B.L.A.C.C. Profile</button></a>
+   
+   <br>
+<br>
+<hr>
 <!-- Contact -->
 <div id="contact" class="BLACC-container BLACC-center BLACC-padding-32">
 <h2 class="BLACC-wide">CONTACT</h2>
