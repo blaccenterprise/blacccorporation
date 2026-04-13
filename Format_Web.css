@@ -7,7 +7,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
-a{background-color:transparent}a:active,a:hover{outline-width:0}
+a{background-color:transparent;text-decoration:none}a:active,a:hover{outline-width:0}
 abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
 b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
@@ -84,7 +84,7 @@ img{vertical-align:middle}a{color:inherit}
 .BLACC-main,#main{transition:margin-left .4s}
 .BLACC-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .BLACC-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
-.BLACC-bar{width:100%;overflow:hidden}.BLACC-center .BLACC-bar{display:inline-block;width:auto}
+.BLACC-bar{width:100%;overflow:hidden}.BLACC-center .BLACC-bar{display:block;width:auto}
 .BLACC-bar .BLACC-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 .BLACC-bar .BLACC-dropdown-hover,.BLACC-bar .BLACC-dropdown-click{position:static;float:left}
 .BLACC-bar .BLACC-button{white-space:normal}
@@ -202,23 +202,40 @@ position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:
 .BLACC-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .BLACC-card,.BLACC-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
 .BLACC-card-4,.BLACC-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
-.BLACC-spin{animation:w3-spin 2s infinite linear}
-@keyframes .BLACC-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
-.BLACC-animate-fading{animation:fading 10s infinite}
+
+.BLACC-spin{animation:BLACC-spin 5s infinite}
+
+@keyframes .BLACC-spin{25%{transform:rotate(90deg)}
+                       50%{transform:rotate(180deg)}
+                       75%{transform:rotate(240deg)}
+                       100%{transform:rotate(359deg)}
+                      }
+
+@keyframes example {
+  from {
+  transform: rotateY(360deg);
+  transform: rotateX(90deg);
+  to {
+  transform: rotateY(360deg);
+  transform: rotateX(360deg);
+
+}
+
+.BLACC-animate-fading{animation:fading 15xs infinite}
 @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.BLACC-animate-opacity{animation:opac 0.8s}
+.BLACC-animate-opacity{animation:opac 20s infinite}
 @keyframes opac{from{opacity:0} to{opacity:1}}
-.BLACC-animate-top{position:relative;animation:animatetop 0.4s}
+.BLACC-animate-top{position:relative;animation:animatetop 4s }
 @keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.BLACC-animate-left{position:relative;animation:animateleft 0.4s}
+.BLACC-animate-left{position:relative;animation:animateleft 4s }
 @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-.BLACC-animate-right{position:relative;animation:animateright 0.4s}
+.BLACC-animate-right{position:relative;animation:animateright 4s }
 @keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-.BLACC-animate-bottom{position:relative;animation:animatebottom 0.4s}
+.BLACC-animate-bottom{position:relative;animation:animatebottom 3s }
 @keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-.BLACC-animate-zoom {animation:animatezoom 0.6s}
+.BLACC-animate-zoom {animation:animatezoom 5s }
 @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-.BLACC-animate-input{transition:width 0.4s ease-in-out}
+.BLACC-animate-input{transition:width 7s ease-in-out }
 .BLACC-animate-input:focus{width:100%!important}
 .BLACC-opacity,.BLACC-hover-opacity:hover{opacity:0.60}
 .BLACC-opacity-off,.BLACC-hover-opacity-off:hover{opacity:1}
