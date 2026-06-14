@@ -2,18 +2,26 @@
  /* BLACC.CSS 1.21 November 2023 by Stevie W. Carpenter */
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
-article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+/* Extract from normalize.css by Stevie W. Carpenter git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+
+
+body {
+  background-color: var(--bg-page);
+  font-family: sans-serif;
+  transition: 0.3s background-color; /* Smooth transitions make it feel premium */
+}
+
+article,aside,details,figcaption,figure,footer,header,nav,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
-a{background-color:transparent;text-decoration:none}a:active,a:hover{outline-width:0}
+a{background-color:transparent;text-decoration:none}a:active,a:hover{outline-width:0;}
 abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
 b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
 code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
-button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input,select,textarea,optgroup{font:inherit;margin:0;}optgroup{font-weight:bold}
 button,input{overflow:visible}button,select{text-transform:none}
 button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
 button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
@@ -26,8 +34,8 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
-html{overflow-x:hidden}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5;}
+html{overflow-x:hidden;}
 h1{font-size:36px}
 h2{font-size:30px}
 h3{font-size:24px}
@@ -53,7 +61,7 @@ img{vertical-align:middle}a{color:inherit}
 .BLACC-centered tr th,.BLACC-centered tr td{text-align:center}
 .BLACC-table td,.BLACC-table th,.BLACC-table-all td,.BLACC-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .BLACC-table th:first-child,.BLACC-table td:first-child,.BLACC-table-all th:first-child,.BLACC-table-all td:first-child{padding-left:16px}
-.BLACC-btn,.BLACC-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.BLACC-btn,.BLACC-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;white-space:nowrap}
 .BLACC-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .BLACC-btn,.BLACC-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .BLACC-disabled,.BLACC-btn:disabled,.BLACC-button:disabled{cursor:not-allowed;opacity:0.3}
@@ -81,7 +89,7 @@ img{vertical-align:middle}a{color:inherit}
 .BLACC-bar-block .BLACC-dropdown-hover,.BLACC-bar-block .BLACC-dropdown-click{width:100%}
 .BLACC-bar-block .BLACC-dropdown-hover .BLACC-dropdown-content,.BLACC-bar-block .BLACC-dropdown-click .BLACC-dropdown-content{min-width:100%}
 .BLACC-bar-block .BLACC-dropdown-hover .BLACC-button,.BLACC-bar-block .BLACC-dropdown-click .BLACC-button{width:100%;text-align:left;padding:8px 16px}
-.BLACC-main,#main{transition:margin-left .4s}
+.BLACC-main,#main{transition:margin-left .4s; cursor: grabbing;}
 .BLACC-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .BLACC-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .BLACC-bar{width:100%;overflow:hidden}.BLACC-center .BLACC-bar{display:block;width:auto}
@@ -221,7 +229,7 @@ position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:
 
 }
 
-.BLACC-animate-fading{animation:fading 15xs infinite}
+.BLACC-animate-fading{animation:fading 15s infinite}
 @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 .BLACC-animate-opacity{animation:opac 20s infinite}
 @keyframes opac{from{opacity:0} to{opacity:1}}
