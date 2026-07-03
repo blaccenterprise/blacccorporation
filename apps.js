@@ -404,21 +404,21 @@ function closeapps48() {
 
     
 function openapps49() {
-  document.getElementById("appsperson_remove").style.display = "block";
+  document.getElementById("appsdiversity_2").style.display = "block";
 }
 
 function closeapps49() {
-  document.getElementById("appsperson_remove").style.display = "none";
+  document.getElementById("appsdiversity_2").style.display = "none";
 }
 
 
     
 function openapp50() {
-  document.getElementById("appsperson_remove").style.display = "block";
+  document.getElementById("appssentiment_very_dissatisfied").style.display = "block";
 }
 
 function closeapps50() {
-  document.getElementById("appsperson_remove").style.display = "none";
+  document.getElementById("appssentiment_very_dissatisfied").style.display = "none";
 }
 
 
